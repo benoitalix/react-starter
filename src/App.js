@@ -7,10 +7,14 @@ import Header from "./components/Header";
 // Styles
 import './App.scss';
 
-const app = (
-    <div className="wrapper">
-        <Header title='React Starter' />
-    </div>
-);
+class App extends React.Component {
+    render(){
+        return(
+            <div className="wrapper">
+                <Header title='React Starter' />
+            </div>
+        );
+    }
+}
 
-ReactDOM.render(app, document.getElementById('app'));
+ReactDOM.render(<App />, document.getElementById('app'));
